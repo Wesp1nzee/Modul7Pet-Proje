@@ -18,7 +18,7 @@ def main() -> None:
     print("Результаты анализа файла:")
     print(analysis)
 
-    words_to_remove = ['example', 'test']
+    words_to_remove = ['Балконский', 'И'] # Любые слова для удаления
     file_processing.remove_lines_with_words(input_file, output_file, words_to_remove)
 
     word_frequencies = file_processing.count_word_frequencies(input_file)
